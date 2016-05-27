@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vtz-WA-iuP" customClass="WZProgressViewFram">
+                                <rect key="frame" x="180" y="55" width="240" height="17"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="JUn-gw-2ae"/>
+                                    <constraint firstAttribute="width" constant="240" id="JzG-QP-LUy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressImageColor">
+                                        <color key="value" red="0.039215686270000001" green="0.37647058820000001" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackImageColor">
+                                        <color key="value" red="0.96119966440000004" green="0.30141044459999999" blue="0.47074244970000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                        <real key="value" value="93"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressCornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="progressImage" value="pro.png"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="trackImage" value="dark.png"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJt-9Z-scC" customClass="WZProgressViewFram">
+                                <rect key="frame" x="180" y="104" width="240" height="17"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressImageColor">
+                                        <color key="value" red="0.96119966440000004" green="0.30141044459999999" blue="0.47074244970000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackImageColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                        <real key="value" value="93"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressCornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="I5C-F4-PcW">
+                                <rect key="frame" x="178" y="175" width="244" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Imc-6B-ZUd"/>
+                                    <constraint firstAttribute="height" constant="30" id="nz5-rK-EtS"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="valueCengid:" destination="BYZ-38-t0r" eventType="valueChanged" id="hY9-P5-yrp"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xlb-q2-qbM" customClass="WZProgressViewFram">
+                                <rect key="frame" x="180" y="136" width="240" height="16"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressImageColor">
+                                        <color key="value" red="0.96119966440000004" green="0.30141044459999999" blue="0.47074244970000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackImageColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressValue">
+                                        <real key="value" value="93"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressCornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AJt-9Z-scC" firstAttribute="top" secondItem="vtz-WA-iuP" secondAttribute="bottom" constant="32" id="1wP-Gf-6TV"/>
+                            <constraint firstItem="AJt-9Z-scC" firstAttribute="trailing" secondItem="vtz-WA-iuP" secondAttribute="trailing" id="6N6-mQ-V77"/>
+                            <constraint firstItem="Xlb-q2-qbM" firstAttribute="leading" secondItem="AJt-9Z-scC" secondAttribute="leading" id="8k5-Nl-kAd"/>
+                            <constraint firstItem="I5C-F4-PcW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AuX-9E-m1Q"/>
+                            <constraint firstItem="Xlb-q2-qbM" firstAttribute="top" secondItem="AJt-9Z-scC" secondAttribute="bottom" constant="15" id="M3d-eT-Ggw"/>
+                            <constraint firstItem="I5C-F4-PcW" firstAttribute="top" secondItem="vtz-WA-iuP" secondAttribute="bottom" constant="103" id="WQe-cp-pPG"/>
+                            <constraint firstItem="vtz-WA-iuP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yax-Sd-ZXs"/>
+                            <constraint firstItem="AJt-9Z-scC" firstAttribute="leading" secondItem="vtz-WA-iuP" secondAttribute="leading" id="cMn-Og-VAH"/>
+                            <constraint firstItem="I5C-F4-PcW" firstAttribute="top" secondItem="Xlb-q2-qbM" secondAttribute="bottom" constant="23" id="e8W-gn-VJC"/>
+                            <constraint firstItem="I5C-F4-PcW" firstAttribute="top" secondItem="AJt-9Z-scC" secondAttribute="bottom" constant="54" id="ika-IL-8Ma"/>
+                            <constraint firstItem="vtz-WA-iuP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="kmx-Yv-lUT"/>
+                            <constraint firstItem="Xlb-q2-qbM" firstAttribute="trailing" secondItem="AJt-9Z-scC" secondAttribute="trailing" id="yPP-L5-J2q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progress" destination="vtz-WA-iuP" id="dZI-V8-ePo"/>
+                        <outlet property="progressThree" destination="Xlb-q2-qbM" id="X6z-LE-4QW"/>
+                        <outlet property="progressTwo" destination="AJt-9Z-scC" id="zdV-2J-gGj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="316"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dark.png" width="279" height="91"/>
+        <image name="pro.png" width="279" height="91"/>
+    </resources>
+</document>
